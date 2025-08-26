@@ -3,6 +3,6 @@
 module ConsoleGame
   module Chess
     # Chess game version
-    VER = "0.9.2"
+    VER = "0.9.3"
   end
 end
