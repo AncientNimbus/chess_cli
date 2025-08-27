@@ -29,7 +29,7 @@ All types of contributions are encouraged and valued. See the [Table of Contents
 ## Code of Conduct
 
 This project and everyone participating in it is governed by the
-[chess_cli | Code of Conduct](https://github.com/AncientNimbus/chess_cli/blob/main/CODE_OF_CONDUCT.md).
+[chess_cli | Code of Conduct](https://github.com/AncientNimbus/chess_cli/blob/f38f9c0ec579fcec741d26d394ae235e7fc067d0/.github/CODE_OF_CONDUCT.md).
 By participating, you are expected to uphold this code. Please report unacceptable behavior
 via the [contact form](https://cryptpad.fr/form/#/2/form/view/RILQE6Ty6JoMCAEMkRRfg5cZXKF7-jhFkHatoBhiL8g/).
 
