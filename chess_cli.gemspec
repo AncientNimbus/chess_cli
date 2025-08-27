@@ -24,14 +24,14 @@ Gem::Specification.new do |s|
     - Chessboard customization
   INFO
   s.email = ["rb@ttfn.lol"]
-  s.homepage = "https://github.com/AncientNimbus/rb-chess"
+  s.homepage = "https://github.com/AncientNimbus/chess_cli"
   s.license = "BSD-3-Clause"
   s.metadata = {
-    "changelog_uri" => "https://github.com/AncientNimbus/rb-chess/blob/main/CHANGELOG.md",
-    "documentation_uri" => "https://ancientnimbus.github.io/rb-chess/doc/",
-    "homepage_uri" => "https://github.com/AncientNimbus/rb-chess",
-    "source_code_uri" => "https://github.com/AncientNimbus/rb-chess",
-    "code_coverage_uri" => "https://ancientnimbus.github.io/rb-chess/coverage/#_AllFiles"
+    "changelog_uri" => "https://github.com/AncientNimbus/chess_cli/blob/main/CHANGELOG.md",
+    "documentation_uri" => "https://ancientnimbus.github.io/chess_cli/doc/",
+    "homepage_uri" => "https://github.com/AncientNimbus/chess_cli",
+    "source_code_uri" => "https://github.com/AncientNimbus/chess_cli",
+    "code_coverage_uri" => "https://ancientnimbus.github.io/chess_cli/coverage/#_AllFiles"
   }
   s.required_ruby_version = ">= 3.4"
 
