@@ -3,8 +3,6 @@ name: Ruby Gem
 on:
   push:
     branches: ["main"]
-  pull_request:
-    branches: ["main"]
 
 jobs:
   build:
@@ -24,7 +22,6 @@ jobs:
           ruby-version: 3.4
 
       - name: Publish to GPR
-        if: github.event_name == 'push'
         run: |
           mkdir -p $HOME/.gem
           touch $HOME/.gem/credentials
@@ -37,7 +34,6 @@ jobs:
           OWNER: ${{ github.repository_owner }}
 
       - name: Publish to RubyGems
-        if: github.event_name == 'push'
         run: |
           mkdir -p $HOME/.gem
           touch $HOME/.gem/credentials
