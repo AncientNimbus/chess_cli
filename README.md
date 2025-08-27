@@ -1,8 +1,7 @@
 # ♟️Ruby Chess 
 
-[![Gem Version](https://badge.fury.io/rb/chess_cli.svg)](https://badge.fury.io/rb/chess_cli)
-[![Rspec Test Fulltrack](https://github.com/AncientNimbus/rb-chess/actions/workflows/rspec_full_track.yml/badge.svg)](https://ancientnimbus.github.io/rb-chess/coverage/#_AllFiles)
-![Status](https://img.shields.io/badge/Status-Pre_Release-2db84d)
+[![Gem Version](https://badge.fury.io/rb/chess_cli.svg?icon=si%3Arubygems&icon_color=%23f72317)](https://badge.fury.io/rb/chess_cli)
+[![Rspec Test Fulltrack](https://github.com/AncientNimbus/chess_cli/actions/workflows/rspec_full_track.yml/badge.svg)](https://ancientnimbus.github.io/chess_cli/coverage/#_AllFiles)
 
 <p align="center">
 <img width="746" height="400" alt="chess-boot-screen" src="https://github.com/user-attachments/assets/c7e7e032-aaa7-4f91-9657-e98558ab736d" />
@@ -13,16 +12,11 @@ Welcome to the Chess project repo, it is my implementation of a terminal based [
 
 ---
 
-
 # Introduction
 
 > [!NOTE]
->
-> Main branch version: `v0.9.2`
->
-> Release branch version: `v0.9.2`
->
-> This version includes most of the features I planned for this project and it is now fully playable and ready for play-testing. Checkout **Getting Started** and **How to play** sections for guidance.
+> 
+> This version includes most of the features I planned for this project and it is now fully playable and ready for play-testing. Checkout [**Getting Started**](#getting-started) and [**How to play**](#how-to-play) sections for guidance.
 >
 > There are a couple more user refinements I wish to add, but I am pretty happy with the current outcome.
 >
@@ -43,7 +37,6 @@ Welcome to the Chess project repo, it is my implementation of a terminal based [
 <p align="center">
 <img width="746" height="820" alt="legals-mate" src="https://github.com/user-attachments/assets/ded67f03-e062-4942-96ac-ad7fcbd9e208" />
 </p>
-
 
 </details>
 
@@ -131,13 +124,15 @@ Note: This mode respects the [Touch-move](https://en.wikipedia.org/wiki/Touch-mo
 - Meaningful text highlights are used throughout the program to act as a visual aid
 - The input prompt prefix is inspired by [GitHub CLI](https://cli.github.com/)
 
+---
+
 # Getting Started
 
 Follow the simple steps below to get started:
 
 Ensure that Ruby `3.4.x` and Bundler are correctly installed on your device (This project is developed using Ruby version `3.4.2`)
 
-### Recommended: Install via RubyGems.org
+## Recommended: Install via RubyGems.org
 
 1. Install the gem to your local environment:
 
@@ -150,24 +145,27 @@ gem install chess_cli
 ```
 chess_cli
 ```
+3. To update the game:
 
-3. To uninstall the game:
+```
+gem update chess_cli
+```
+
+4. To uninstall the game:
 
 ```
 gem uninstall chess_cli
 ```
 
 <details>
-  <summary><h3>Alternatively: Build From Source Code</h3></summary>
-  
-### Build From Source Code
+  <summary><h2>Alternatively: Build From Source Code</h2></summary>
 
 1. Clone the repo or download the project from Releases `v0.9.x` 
 
 2. In your terminal, open the directory:
 
   ```
-  cd rb-chess/
+  cd chess_cli/
   ```
 4. Build the gem locally:
   ```
@@ -191,6 +189,8 @@ gem uninstall chess_cli
 ```
 </details>
 
+---
+
 # How to Play
 
 > [!TIP]
@@ -209,7 +209,7 @@ See the example below on how to launch chess as a new player:
 2. You will be prompted to create or load a user profile
    - Enter `1` to create a new profile
 4. Give your profile a username such as `Ruby Chess Tester`
-5. Your profile will be created automatically and can be found at the `/rb-chess/user_data/` directory.
+5. Your profile will be created automatically and can be found at the `/chess_cli/user_data/` directory.
 6. You have successfully entered the lobby, enter `--help` to see a list of commands.
 </details>
 
@@ -402,12 +402,14 @@ Note: As a reminder, `--help` will display all available commands for chess.
 ```
 
 - Export current session as a `.pgn` file
-- The exported file can be found at the `/rb-chess/user_data/pgn_export/` directory.
+- The exported file can be found at the `/chess_cli/user_data/pgn_export/` directory.
 
 ```
 --export
 ```
 </details>
+
+---
 
 # Technical Details 
 
@@ -435,9 +437,8 @@ Note: As a reminder, `--help` will display all available commands for chess.
 > [!WARNING]
 > Below are a list of of known issues found during testing
 >
-> 1. PGN export might not include the last move if it is made by White
+> 1. **Fixed in v0.9.3** - ~~PGN export might not include the last move if it is made by White~~
 > 2. FEN import will reset the full move counter, this is a minor issue as it won’t affect the actual gameplay
->
 
 ## Data Serialisation
 
@@ -491,10 +492,6 @@ Lastly, all data values are saved with primitive types to ensure maximum compati
 ```
 </details>
 
-
-
-
-
 ## Technical Documentations
 
 **Test Coverage Summary**
@@ -509,15 +506,19 @@ Lastly, all data values are saved with primitive types to ensure maximum compati
 | Avg. Hits per line             | 2335.8              |
 |                                |                     |
 
-- [Codebase documentation](https://ancientnimbus.github.io/rb-chess/doc/)
-- [Code coverage report](https://ancientnimbus.github.io/rb-chess/coverage/#_AllFiles)
+- [Codebase documentation](https://ancientnimbus.github.io/chess_cli/doc/)
+- [Code coverage report](https://ancientnimbus.github.io/chess_cli/coverage/#_AllFiles)
 
-For more details regarding the development of this project, feel free to checkout the [Wiki](https://github.com/AncientNimbus/rb-chess/wiki) page (New article coming soon).
+For more details regarding the development of this project, feel free to checkout the [Wiki](https://github.com/AncientNimbus/chess_cli/wiki) page (New article coming soon).
 
 ## Gems Used
 
+### Production
 - [Paint](https://github.com/janlelis/paint)
 - [Whirly](https://github.com/janlelis/whirly)
+- [Reline](https://github.com/ruby/reline)
+
+### Development
 - [RSpec](https://rspec.info/)
 - [Rubocop](https://rubocop.org/)
 - [Yard](https://yardoc.org/)

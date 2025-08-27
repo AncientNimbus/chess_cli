@@ -1,4 +1,4 @@
-# Code of Conduct - rb-chess
+# Code of Conduct - chess_cli
 
 ## Our Pledge
 
